@@ -107,51 +107,74 @@ export default function Home() {
     <div className="bg-[var(--sand)]">
       <HeroSlider />
 
-      <section className="mx-auto max-w-6xl px-4 py-16 lg:py-20 grid gap-12 lg:grid-cols-2 items-center">
-        <div className="relative">
-          <div className="absolute -inset-6 border border-[var(--beige)] rounded-2xl opacity-60" />
-          <Image
-            src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1200&q=80"
-            alt="Principal attorney"
-            width={640}
-            height={780}
-            className="relative rounded-2xl object-cover card-shadow"
-          />
-        </div>
-        <div className="space-y-5">
-          <SectionHeading
-            eyebrow="About Us"
-            title="Realize your constitutional right with qualified help"
-            subtitle="We pair courtroom craftsmanship with business fluency to deliver precise, decisive results for clients who expect more."
-            align="left"
-          />
-          <ul className="grid gap-3 text-sm text-[var(--ink)]/90">
-            <li className="flex items-center gap-3">
-              <span className="text-[var(--gold)]">—</span> Pre-file investigation
-            </li>
-            <li className="flex items-center gap-3">
-              <span className="text-[var(--gold)]">—</span> Probation violations
-            </li>
-            <li className="flex items-center gap-3">
-              <span className="text-[var(--gold)]">—</span> Illegal search &amp; seizure
-            </li>
-            <li className="flex items-center gap-3">
-              <span className="text-[var(--gold)]">—</span> Professional liability
-            </li>
-          </ul>
-          <div className="flex gap-3">
-            <Link
-              href="/about"
-              className="rounded-full bg-[var(--gold)] px-5 py-3 text-sm font-semibold uppercase tracking-wide text-[var(--black)] hover:bg-[#c99b04] transition-colors"
-            >
-              Read more
-            </Link>
-            <Link
-              href="/practice-areas"
-              className="rounded-full border border-[var(--ink)]/20 px-5 py-3 text-sm font-semibold uppercase tracking-wide hover:border-[var(--gold)] hover:text-[var(--gold)] transition-colors"
-            >
-              View practice areas
-            </Link>
+      <section className="relative overflow-hidden bg-gradient-to-br from-white via-[var(--sand)]/30 to-white py-16 lg:py-20">
+        <div className="mx-auto max-w-7xl">
+          <div className="grid lg:grid-cols-2 min-h-[600px]">
+            {/* Image Section - Left */}
+            <div className="relative order-2 lg:order-1">
+              <div className="absolute inset-0 bg-gradient-to-r from-[var(--ink)]/10 to-transparent z-10" />
+              <Image
+                src="/attorney.png"
+                alt="Professional attorney"
+                width={800}
+                height={900}
+                className="h-full w-full object-cover object-center"
+                priority
+              />
+            </div>
+
+            {/* Content Section - Right */}
+            <div className="relative order-1 lg:order-2 flex items-center px-8 lg:px-16 py-12">
+              {/* Large decorative text in background */}
+              <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none overflow-hidden">
+                <span className="text-[20rem] font-heading font-bold text-[var(--ink)]">01</span>
+              </div>
+
+              <div className="relative z-10 space-y-6 max-w-xl">
+                <div>
+                  <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-[var(--gold)] mb-4">
+                    About Us
+                  </p>
+                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-[var(--ink)] leading-tight mb-6">
+                    Realize your constitutional right with qualified help
+                  </h2>
+                  <p className="text-base text-zinc-600 leading-relaxed mb-4">
+                    We pair courtroom craftsmanship with business fluency to deliver precise, decisive results for clients who expect more.
+                  </p>
+                  <p className="text-base text-zinc-600 leading-relaxed">
+                    Our experienced legal team combines strategic thinking with compassionate guidance to ensure your rights are protected at every step.
+                  </p>
+                </div>
+
+                <ul className="space-y-3 text-sm text-[var(--ink)]">
+                  <li className="flex items-center gap-3">
+                    <span className="text-[var(--gold)] text-lg">—</span>
+                    <span>Pre-file Investigation</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-[var(--gold)] text-lg">—</span>
+                    <span>Probation Violations</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-[var(--gold)] text-lg">—</span>
+                    <span>Illegal Search & Seizure</span>
+                  </li>
+                  <li className="flex items-center gap-3">
+                    <span className="text-[var(--gold)] text-lg">—</span>
+                    <span>Professional liability</span>
+                  </li>
+                </ul>
+
+                <div className="pt-4">
+                  <Link
+                    href="/about"
+                    className="inline-flex items-center gap-2 rounded border-2 border-[var(--ink)] bg-transparent px-8 py-3 text-sm font-semibold uppercase tracking-wide text-[var(--ink)] hover:bg-[var(--ink)] hover:text-white transition-all duration-300"
+                  >
+                    Read More
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -183,7 +206,7 @@ export default function Home() {
       <section className="bg-[var(--ink)] text-white px-4 py-16 lg:py-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-5" aria-hidden>
           <Image
-            src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1600&q=80"
+            src="/practice-areas-bg.jpg"
             alt=""
             fill
             className="object-cover"
