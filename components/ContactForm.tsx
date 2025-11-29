@@ -72,7 +72,7 @@ export default function ContactForm({ variant = "dark" }: { variant?: "dark" | "
           value={data.name}
           onChange={(e) => setData({ ...data, name: e.target.value })}
           className={inputClasses}
-          placeholder="Jane Doe"
+          placeholder="kruthik B R"
           required
         />
       </div>
@@ -84,7 +84,7 @@ export default function ContactForm({ variant = "dark" }: { variant?: "dark" | "
             value={data.email}
             onChange={(e) => setData({ ...data, email: e.target.value })}
             className={inputClasses}
-            placeholder="you@company.com"
+            placeholder="you@gmail.com"
             required
           />
         </div>
@@ -95,7 +95,7 @@ export default function ContactForm({ variant = "dark" }: { variant?: "dark" | "
             value={data.phone}
             onChange={(e) => setData({ ...data, phone: e.target.value })}
             className={inputClasses}
-            placeholder="+1 (555) 123-4567"
+            placeholder="+91 9876543210"
           />
         </div>
       </div>

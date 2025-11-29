@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const contactItems = [
@@ -18,19 +19,15 @@ export default function Footer() {
     <footer className="bg-[var(--ink)] text-white mt-16">
       <div className="mx-auto max-w-6xl px-4 py-14 grid gap-10 md:grid-cols-3">
         <div className="space-y-4">
-          <div className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-white/5 border border-white/10">
-              <span className="text-2xl font-semibold text-[var(--gold)]">
-                ⚖
-              </span>
-            </div>
-            <div className="leading-tight">
-              <div className="text-sm uppercase tracking-[0.2em] text-[var(--gold)]">
-                Lawyera
-              </div>
-              <div className="font-heading text-xl font-semibold">Legal Office</div>
-            </div>
-          </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="https://shwetha.org/wp-content/uploads/2025/03/logo_sw-5.png"
+              alt="Lawyera logo"
+              width={120}
+              height={48}
+              className="h-12 w-auto object-contain"
+            />
+          </Link>
           <p className="text-sm text-white/70 max-w-xs">
             Boutique legal firm providing exceptional service and accessible
             expertise across corporate, civil, and criminal matters.
