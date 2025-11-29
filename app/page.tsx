@@ -179,34 +179,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-16 lg:py-20 noise-bg">
-        <div className="mx-auto max-w-6xl space-y-10">
-          <SectionHeading
-            eyebrow="Why Choose Us"
-            title="Reliable lawyer agency with high-quality legal services"
-            subtitle="Every matter receives senior attention. We operate lean, communicate clearly, and align on outcomes early."
-          />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {features.map((feature) => (
-              <div
-                key={feature.title}
-                className="rounded-2xl border border-[var(--beige)]/60 bg-white/80 px-5 py-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-200"
-              >
-                <div className="text-2xl mb-3">{feature.icon}</div>
-                <h3 className="font-heading text-xl text-[var(--ink)] mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-sm text-zinc-700">{feature.copy}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="bg-[var(--ink)] text-white px-4 py-16 lg:py-20 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5" aria-hidden>
+        <div className="absolute inset-0 opacity-10" aria-hidden>
           <Image
-            src="/practice-areas-bg.jpg"
+            src="/practice-areas-bg.png"
             alt=""
             fill
             className="object-cover"
@@ -240,6 +216,30 @@ export default function Home() {
                 >
                   Learn more <span aria-hidden>›</span>
                 </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="px-4 py-16 lg:py-20 noise-bg">
+        <div className="mx-auto max-w-6xl space-y-10">
+          <SectionHeading
+            eyebrow="Why Choose Us"
+            title="Reliable lawyer agency with high-quality legal services"
+            subtitle="Every matter receives senior attention. We operate lean, communicate clearly, and align on outcomes early."
+          />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {features.map((feature) => (
+              <div
+                key={feature.title}
+                className="rounded-2xl border border-[var(--beige)]/60 bg-white/80 px-5 py-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-200"
+              >
+                <div className="text-2xl mb-3">{feature.icon}</div>
+                <h3 className="font-heading text-xl text-[var(--ink)] mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-sm text-zinc-700">{feature.copy}</p>
               </div>
             ))}
           </div>
