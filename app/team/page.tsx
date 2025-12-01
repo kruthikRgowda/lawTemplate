@@ -5,7 +5,7 @@ import SectionHeading from "../../components/SectionHeading";
 export const metadata = {
   title: "Team",
   description:
-    "Meet the attorneys and strategists who lead Lawyera engagements.",
+    "Meet the attorneys and strategists who lead Lawyer engagements.",
 };
 
 const team = [
