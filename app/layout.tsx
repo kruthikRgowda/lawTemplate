@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://lawyera.example"),
   title: {
     default: "Shwetha Ravishankar | SRA Legal Firm",
-    template: "%s | Lawyera Legal",
+    template: "%s | Lawyer Legal",
   },
   description:
     "Premium legal services with a boutique feel. Strategic counsel across corporate, civil, and criminal matters.",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lawyera | Boutique Legal Firm",
+    title: "Lawyer | Boutique Legal Firm",
     description:
       "Premium legal services with a boutique feel. Strategic counsel across corporate, civil, and criminal matters.",
   },

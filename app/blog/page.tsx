@@ -5,7 +5,7 @@ import SectionHeading from "../../components/SectionHeading";
 export const metadata = {
   title: "Blog",
   description:
-    "Insights, case studies, and commentary from Lawyera attorneys.",
+    "Insights, case studies, and commentary from Lawyer attorneys.",
 };
 
 const posts = [
@@ -34,7 +34,7 @@ export default function BlogPage() {
     <div className="bg-[var(--sand)]">
       <PageHeader
         title="Blog"
-        description="Legal analysis and practical guidance from the Lawyera team."
+        description="Legal analysis and practical guidance from the Lawyer team."
       />
 
       <section className="mx-auto max-w-6xl px-4 py-16 lg:py-20 space-y-10">

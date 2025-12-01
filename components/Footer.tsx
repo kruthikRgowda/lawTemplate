@@ -22,7 +22,7 @@ export default function Footer() {
           <Link href="/" className="flex items-center">
             <Image
               src="https://shwetha.org/wp-content/uploads/2025/03/logo_sw-5.png"
-              alt="Lawyera logo"
+              alt="Lawyer logo"
               width={120}
               height={48}
               className="h-12 w-auto object-contain"
@@ -33,6 +33,7 @@ export default function Footer() {
             expertise across corporate, civil, and criminal matters.
           </p>
         </div>
+
 
         <div>
           <h3 className="font-heading text-lg mb-4 text-[var(--gold)]">
@@ -87,7 +88,7 @@ export default function Footer() {
       </div>
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-6xl px-4 py-4 text-sm text-white/60 flex flex-col sm:flex-row gap-3 sm:items-center justify-between">
-          <span>© 2025 Lawyera. All rights reserved.</span>
+          <span>© 2025 lawyer. All rights reserved.</span>
           <span>Crafted for premium legal experiences.</span>
         </div>
       </div>

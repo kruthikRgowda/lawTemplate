@@ -5,7 +5,7 @@ import SectionHeading from "../../components/SectionHeading";
 export const metadata = {
   title: "About",
   description:
-    "Learn about Lawyera's boutique approach, leadership, and commitment to client outcomes.",
+    "Learn about Lawyer's boutique approach, leadership, and commitment to client outcomes.",
 };
 
 const milestones = [
@@ -32,7 +32,7 @@ export default function AboutPage() {
             align="left"
           />
           <p className="text-base text-zinc-700">
-            Lawyera was founded to deliver enterprise-grade counsel without the
+            Lawyer was founded to deliver enterprise-grade counsel without the
             overhead and opacity of large firms. We have argued complex motions,
             navigated regulatory disputes, and shepherded high-value
             transactions with a relentless focus on client outcomes.
