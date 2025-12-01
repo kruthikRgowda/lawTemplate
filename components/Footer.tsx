@@ -1,45 +1,33 @@
+import Image from "next/image";
 import Link from "next/link";
 
-const quickLinks = [
-  { label: "About", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Practice Areas", href: "/practice-areas" },
-  { label: "Team", href: "/team" },
-  { label: "Blog", href: "/blog" },
-  { label: "Contact", href: "/contact" },
-];
-
 const contactItems = [
-  { label: "Universal 234, Triumph Street, Los Angeles, CA", href: "#" },
-  { label: "info@lawyera.com", href: "mailto:info@lawyera.com" },
-  { label: "+1 (555) 123-4567", href: "tel:+15551234567" },
+  { label: "No. 128, Sanskruti, Suvarna Badavane, 6th cross, Nagarbhavi 1st stage, Bengaluru - 560072", href: "#" },
+  { label: "shwetha@sralegal.co.in", href: "mailto:shwetha@sralegal.co.in" },
+  { label: "+919972916991", href: "tel:+919972916991" },
 ];
 
 const socials = [
-  { label: "LinkedIn", href: "https://www.linkedin.com" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/shwetha-ravishankar-bangalore" },
   { label: "Twitter", href: "https://x.com" },
-  { label: "Facebook", href: "https://www.facebook.com" },
-  { label: "Instagram", href: "https://www.instagram.com" },
+  { label: "Facebook", href: "https://www.facebook.com/share/1AebAoBe73/" },
+  { label: "Instagram", href: "https://www.instagram.com/advocate.shwetharavishankar?igsh=cm8zdHM1YmJqbHZy" },
 ];
 
 export default function Footer() {
   return (
     <footer className="bg-[var(--ink)] text-white mt-16">
-      <div className="mx-auto max-w-6xl px-4 py-14 grid gap-10 md:grid-cols-4">
+      <div className="mx-auto max-w-6xl px-4 py-14 grid gap-10 md:grid-cols-3">
         <div className="space-y-4">
-          <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-md bg-white/5 border border-white/10">
-              <span className="text-lg font-semibold text-[var(--gold)]">
-                ⚖
-              </span>
-            </div>
-            <div className="leading-tight">
-              <div className="text-sm uppercase tracking-[0.2em] text-[var(--gold)]">
-                Lawyera
-              </div>
-              <div className="font-heading text-xl font-semibold">Legal Office</div>
-            </div>
-          </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="https://shwetha.org/wp-content/uploads/2025/03/logo_sw-5.png"
+              alt="Lawyera logo"
+              width={120}
+              height={48}
+              className="h-12 w-auto object-contain"
+            />
+          </Link>
           <p className="text-sm text-white/70 max-w-xs">
             Boutique legal firm providing exceptional service and accessible
             expertise across corporate, civil, and criminal matters.
@@ -48,32 +36,14 @@ export default function Footer() {
 
         <div>
           <h3 className="font-heading text-lg mb-4 text-[var(--gold)]">
-            Quick Links
-          </h3>
-          <ul className="space-y-2 text-sm">
-            {quickLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="hover:text-[var(--gold)] transition-colors"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h3 className="font-heading text-lg mb-4 text-[var(--gold)]">
             Contact
           </h3>
-          <ul className="space-y-2 text-sm">
+          <ul className="space-y-3 text-sm">
             {contactItems.map((item) => (
               <li key={item.label}>
                 <a
                   href={item.href}
-                  className="hover:text-[var(--gold)] transition-colors"
+                  className="hover:text-[var(--gold)] transition-colors text-white/80"
                 >
                   {item.label}
                 </a>

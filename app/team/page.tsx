@@ -10,30 +10,30 @@ export const metadata = {
 
 const team = [
   {
-    name: "Ian Savage",
-    role: "Managing Partner",
-    bio: "Leads high-stakes litigation and corporate disputes with a pragmatic, trial-ready approach.",
+    name: "RaviShankar Kandhi",
+    role: "BCom, LLB, FCS",
+    bio: "",
     image:
       "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=800&q=80",
   },
   {
-    name: "Michael Oykhman",
-    role: "Trial Lawyer",
-    bio: "Known for incisive cross-examination and relentless preparation in complex matters.",
+    name: "Srinivas",
+    role: "BCom, LLB",
+    bio: "",
     image:
       "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
   },
   {
-    name: "Ryan Patmore",
-    role: "Corporate Counsel",
-    bio: "Advises founders and boards on growth, governance, and risk across transactions.",
+    name: "Nagimani",
+    role: "BCom, LLB",
+    bio: "",
     image:
       "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
   },
   {
-    name: "Ava Carter",
-    role: "Litigation Specialist",
-    bio: "Coordinates discovery, motion practice, and trial strategy with meticulous detail.",
+    name: "Kiran",
+    role: "BCom, LLB",
+    bio: "",
     image:
       "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=800&q=80",
   },

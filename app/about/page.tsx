@@ -10,7 +10,7 @@ export const metadata = {
 
 const milestones = [
   { label: "Years of practice", value: "18+" },
-  { label: "Matters resolved", value: "1,200+" },
+  { label: "Matters resolved", value: "1,800+" },
   { label: "Court appearances", value: "600+" },
   { label: "Client satisfaction", value: "98%" },
 ];

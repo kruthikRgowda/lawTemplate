@@ -62,26 +62,26 @@ const practiceAreas = [
 
 const team = [
   {
-    name: "Ian Savage",
-    role: "Managing Partner",
+    name: "RaviShankar Kandhi",
+    role: "BCom, LLB, FCS",
     image:
       "https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=800&q=80",
   },
   {
-    name: "Michael Oykhman",
-    role: "Trial Lawyer",
-    image:
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80",
-  },
-  {
-    name: "Ryan Patmore",
-    role: "Corporate Counsel",
+    name: "Srinivas",
+    role: "BCom, LLB",
     image:
       "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80",
   },
   {
-    name: "Ava Carter",
-    role: "Litigation Specialist",
+    name: "Nagimani",
+    role: "BCom, LLB",
+    image:
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    name: "Kiran",
+    role: "BCom, LLB",
     image:
       "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=800&q=80",
   },
@@ -127,7 +127,7 @@ export default function Home() {
             <div className="relative order-1 lg:order-2 flex items-center px-8 lg:px-16 py-12">
               {/* Large decorative text in background */}
               <div className="absolute inset-0 flex items-center justify-center opacity-[0.03] pointer-events-none overflow-hidden">
-                <span className="text-[20rem] font-heading font-bold text-[var(--ink)]">01</span>
+                <span className="text-[20rem] font-heading font-bold text-[var(--ink)]">18</span>
               </div>
 
               <div className="relative z-10 space-y-6 max-w-xl">
@@ -179,34 +179,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-4 py-16 lg:py-20 noise-bg">
-        <div className="mx-auto max-w-6xl space-y-10">
-          <SectionHeading
-            eyebrow="Why Choose Us"
-            title="Reliable lawyer agency with high-quality legal services"
-            subtitle="Every matter receives senior attention. We operate lean, communicate clearly, and align on outcomes early."
-          />
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {features.map((feature) => (
-              <div
-                key={feature.title}
-                className="rounded-2xl border border-[var(--beige)]/60 bg-white/80 px-5 py-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-200"
-              >
-                <div className="text-2xl mb-3">{feature.icon}</div>
-                <h3 className="font-heading text-xl text-[var(--ink)] mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-sm text-zinc-700">{feature.copy}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       <section className="bg-[var(--ink)] text-white px-4 py-16 lg:py-20 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5" aria-hidden>
+        <div className="absolute inset-0 opacity-10" aria-hidden>
           <Image
-            src="/practice-areas-bg.jpg"
+            src="/practice-areas-bg.png"
             alt=""
             fill
             className="object-cover"
@@ -217,6 +193,7 @@ export default function Home() {
             eyebrow="Practice Areas"
             title="Strategic counsel for sophisticated matters"
             subtitle="We operate across industries with courtroom-tested litigators and pragmatic advisors."
+            theme="dark"
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {practiceAreas.map((area) => (
@@ -245,6 +222,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+
 
       <section className="px-4 py-16 lg:py-20">
         <div className="mx-auto max-w-6xl space-y-10">
@@ -276,6 +254,86 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="px-4 py-16 lg:py-20 noise-bg">
+        <div className="mx-auto max-w-6xl space-y-16">
+          <SectionHeading
+            eyebrow="Why Choose Us"
+            title="Reliable lawyer agency with high-quality legal services"
+            subtitle="Every matter receives senior attention. We operate lean, communicate clearly, and align on outcomes early."
+          />
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {features.map((feature) => (
+              <div
+                key={feature.title}
+                className="rounded-2xl border border-[var(--beige)]/60 bg-white/80 px-5 py-6 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-200"
+              >
+                <div className="text-2xl mb-3">{feature.icon}</div>
+                <h3 className="font-heading text-xl text-[var(--ink)] mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-sm text-zinc-700">{feature.copy}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Our Clients Sub-section */}
+          <div className="pt-8">
+            <div className="text-center mb-10">
+              <p className="text-xs sm:text-sm font-medium uppercase tracking-[0.2em] text-[var(--gold)] mb-2">
+                Our Clients
+              </p>
+              <h2 className="text-2xl sm:text-3xl font-heading font-bold text-[var(--ink)]">
+                Trusted by Leading Organizations
+              </h2>
+            </div>
+            <div className="flex flex-wrap items-center justify-center gap-8 lg:gap-12">
+              <div className="relative w-32 h-20 grayscale hover:grayscale-0 opacity-70 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                <Image
+                  src="https://shwetha.org/wp-content/uploads/2025/04/New-Project-4.webp"
+                  alt="Bostik"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-40 h-20 grayscale hover:grayscale-0 opacity-70 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                <Image
+                  src="https://shwetha.org/wp-content/uploads/2025/04/New-Project-5.webp"
+                  alt="Rani Chennamma University"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-32 h-20 grayscale hover:grayscale-0 opacity-70 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                <Image
+                  src="https://shwetha.org/wp-content/uploads/2025/04/New-Project-6.webp"
+                  alt="Scania"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-36 h-20 grayscale hover:grayscale-0 opacity-70 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                <Image
+                  src="https://shwetha.org/wp-content/uploads/2025/04/New-Project-7.webp"
+                  alt="Union Bank of India"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <div className="relative w-32 h-20 grayscale hover:grayscale-0 opacity-70 hover:opacity-100 hover:scale-110 transition-all duration-300">
+                <Image
+                  src="https://shwetha.org/wp-content/uploads/2025/04/New-Project-8.webp"
+                  alt="Kings Club"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
 
       <section className="px-4 py-16 lg:py-20 bg-white">
         <div className="mx-auto max-w-6xl grid gap-10 lg:grid-cols-2 items-start">

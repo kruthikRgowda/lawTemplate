@@ -10,17 +10,11 @@ export const metadata = {
 
 const offices = [
   {
-    city: "Los Angeles",
-    address: "Universal 234, Triumph Street",
-    phone: "+1 (555) 123-4567",
-    email: "la@lawyera.com",
-  },
-  {
-    city: "New York",
-    address: "249 Hudson Street",
-    phone: "+1 (555) 987-6543",
-    email: "ny@lawyera.com",
-  },
+    city: " Banglore",
+    address: "No. 128, Sanskruti, Suvarna Badavane, 6th cross, Nagarbhavi 1st stage, Bengaluru - 560072",
+    phone: "+91 9972916991",
+    email: "shwetha@sralegal.co.in",
+  }
 ];
 
 export default function ContactPage() {
