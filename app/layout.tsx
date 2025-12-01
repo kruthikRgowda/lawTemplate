@@ -19,13 +19,13 @@ const body = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL("https://lawyera.example"),
   title: {
-    default: "Lawyera | Boutique Legal Firm",
+    default: "Shwetha Ravishankar | SRA Legal Firm",
     template: "%s | Lawyera Legal",
   },
   description:
     "Premium legal services with a boutique feel. Strategic counsel across corporate, civil, and criminal matters.",
   openGraph: {
-    title: "Lawyera | Boutique Legal Firm",
+    title: "Shwetha Ravishankar | SRA Legal Firm",
     description:
       "Premium legal services with a boutique feel. Strategic counsel across corporate, civil, and criminal matters.",
     url: "https://lawyera.example",
