@@ -4,7 +4,7 @@ import Link from "next/link";
 const contactItems = [
   { label: "No. 128, Sanskruti, Suvarna Badavane, 6th cross, Nagarbhavi 1st stage, Bengaluru - 560072", href: "#" },
   { label: "shwetha@sralegal.co.in", href: "mailto:shwetha@sralegal.co.in" },
-  { label: "+919972916991", href: "tel:+919972916991" },
+  { label: "+91 9844055379", href: "tel:+91 9972916991" },
 ];
 
 const socials = [
